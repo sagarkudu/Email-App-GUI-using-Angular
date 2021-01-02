@@ -16,6 +16,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { EmailComponent } from './components/email/email.component';
 
+//Email form
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +36,10 @@ import { EmailComponent } from './components/email/email.component';
     MatButtonModule,
     MatSnackBarModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [MatSnackBar],
   bootstrap: [AppComponent]
