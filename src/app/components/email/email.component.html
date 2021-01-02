@@ -21,13 +21,19 @@
 
             <!-- creating buttons -->
             <div class="text-center">
-                <button type="submit" mat-raised-button color="primary">Send mail</button>
+
+                <!-- Adding spinner button and hiding before sending -->
+                <mat-spinner  *ngIf="flag" style="margin:auto;"></mat-spinner>
+
+                <!--Disable button while sending the mail-->
+                <button [disabled]="flag" type="submit" mat-raised-button color="primary">Send mail</button> <!--When we [disabled]="flag", then flag will be true  in email.component.ts-->
+
                 <button type="reset" mat-raised-button color="accent">Reset</button>
             </div>
         </form>
         
         <!-- printing data in json format -->
-        {{data | json}} 
+        <!-- {{data | json}}  -->
 
     </div>
 </div>
