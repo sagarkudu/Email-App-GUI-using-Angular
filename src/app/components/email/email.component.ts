@@ -21,6 +21,7 @@ export class EmailComponent implements OnInit {
   //submit form function
   doSubmitForm() {
     console.log("submitting form...");
+    console.log("DATA", this.data); //printing data on console, you will get js object
   }
 
 }
